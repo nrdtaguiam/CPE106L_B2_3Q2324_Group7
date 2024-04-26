@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>530</y>
+      <w>130</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>SavingsAccount
+--
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>390</y>
+      <w>130</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Bank
+--
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>770</x>
+      <y>450</y>
+      <w>30</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>220</x>
+      <y>480</y>
+      <w>330</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>SavingsAccount
+--
+-name:str
+-pin:int
+-balance:float
+RATE:float
+--
++__init__(name:str, pin:int, balance:float)
++__str__():str
++getBalance():float
++getPin():int
++deposit(amount: float):void
++withdraw(amount: float):Union[str, void]
++computeInterest():float</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>250</x>
+      <y>90</y>
+      <w>280</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>Bank
+--
+-accounts:{}
+-fileName:str
+--
++__init__(fileName:str):void
++__str__():str
++makeKey(name:str, pin:int):str
++add(account:str):void
++remove(name:str, pin:int):str
++get(name:str, pin:int):str
++computeInterest():str
++getKeys():str []
++save(fileName:str):void
++createBank(numAccounts:int):str
++testAccount():void
++main(number:int, fileName:void):void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>370</x>
+      <y>360</y>
+      <w>30</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

@@ -1,0 +1,20 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>40</x><y>160</y><w>210</w><h>230</h></coordinates><panel_attributes>Student
+--
+-name: string
+-number: int
+--
++__init__()
++getName()
++setScore()
++getScore()
++getAverage()
++getHighScore()
++__eq__()
++__ge__()
++__lt__()
++__str__()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>180</y><w>210</w><h>190</h></coordinates><panel_attributes>Main
+--
++name: string
++number: int
+--
++main()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>260</y><w>210</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;190;10</additional_attributes></element></diagram>
