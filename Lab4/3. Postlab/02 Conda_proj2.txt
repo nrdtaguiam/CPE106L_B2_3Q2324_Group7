@@ -1,0 +1,9 @@
+****** POSTLAB *******
+
+> python
+
+>>> import tkinter.filedialog as fd
+>>> filename = fd.askopenfilename()
+>>> f = filename.split("/")
+>>> message = f[-1]
+>>> print(message)
