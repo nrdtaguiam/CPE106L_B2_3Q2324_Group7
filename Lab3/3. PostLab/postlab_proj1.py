@@ -40,9 +40,9 @@ class Student(object):
 def main():
 
     """A simple test."""
-    student1 = Student("Ken", 5)
-    student2 = Student("Gwen", 5)
-    student3 = Student("Ken", 3)
+    student1 = Student("Neal", 5)
+    student2 = Student("Lee", 5)
+    student3 = Student("Paulo", 3)
     
     # First method test for equality
     print(student1 == student2)  # False
